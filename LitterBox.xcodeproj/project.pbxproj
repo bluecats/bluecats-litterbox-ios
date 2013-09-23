@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28B1B39817EB92790052A9B2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B1B39717EB92790052A9B2 /* Icon.png */; };
+		28B1B39D17EB92BE0052A9B2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B1B39917EB92BE0052A9B2 /* Default-568h@2x.png */; };
+		28B1B39E17EB92BE0052A9B2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B1B39A17EB92BE0052A9B2 /* Default.png */; };
+		28B1B39F17EB92BE0052A9B2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B1B39B17EB92BE0052A9B2 /* Default@2x.png */; };
+		28B1B3A017EB92BE0052A9B2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B1B39C17EB92BE0052A9B2 /* Icon@2x.png */; };
+		A67505C517EA77E5005F847D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67505C417EA77E5005F847D /* UIKit.framework */; };
+		A67505C717EA77E5005F847D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67505C617EA77E5005F847D /* Foundation.framework */; };
+		A67505C917EA77E5005F847D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67505C817EA77E5005F847D /* CoreGraphics.framework */; };
+		A67505CF17EA77E5005F847D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67505CD17EA77E5005F847D /* InfoPlist.strings */; };
+		A67505D117EA77E5005F847D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67505D017EA77E5005F847D /* main.m */; };
+		A67505D517EA77E5005F847D /* LBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A67505D417EA77E5005F847D /* LBAppDelegate.m */; };
+		A67505DE17EA77E5005F847D /* LBOnlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67505DD17EA77E5005F847D /* LBOnlyViewController.m */; };
+		A6902B3B17EA9FF2009CC5A4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A6902B3917EA9FF2009CC5A4 /* logo.png */; };
+		A6902B4117EB432D009CC5A4 /* bg-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6902B3E17EB432D009CC5A4 /* bg-568h@2x.png */; };
+		A6902B4217EB432D009CC5A4 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A6902B3F17EB432D009CC5A4 /* bg.png */; };
+		A6902B4317EB432D009CC5A4 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6902B4017EB432D009CC5A4 /* bg@2x.png */; };
+		E98A1F0BE07146C19E9718F7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64409A93427A4912BD2A48AD /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28B1B39717EB92790052A9B2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = LitterBox/Resources/Images/Icon.png; sourceTree = "<group>"; };
+		28B1B39917EB92BE0052A9B2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "LitterBox/Resources/Images/Default-568h@2x.png"; sourceTree = "<group>"; };
+		28B1B39A17EB92BE0052A9B2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = LitterBox/Resources/Images/Default.png; sourceTree = "<group>"; };
+		28B1B39B17EB92BE0052A9B2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "LitterBox/Resources/Images/Default@2x.png"; sourceTree = "<group>"; };
+		28B1B39C17EB92BE0052A9B2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "LitterBox/Resources/Images/Icon@2x.png"; sourceTree = "<group>"; };
+		64409A93427A4912BD2A48AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67505C117EA77E5005F847D /* LitterBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LitterBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67505C417EA77E5005F847D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A67505C617EA77E5005F847D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A67505C817EA77E5005F847D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A67505CC17EA77E5005F847D /* LitterBox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LitterBox-Info.plist"; sourceTree = "<group>"; };
+		A67505CE17EA77E5005F847D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A67505D017EA77E5005F847D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A67505D217EA77E5005F847D /* LitterBox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LitterBox-Prefix.pch"; sourceTree = "<group>"; };
+		A67505D317EA77E5005F847D /* LBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBAppDelegate.h; sourceTree = "<group>"; };
+		A67505D417EA77E5005F847D /* LBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBAppDelegate.m; sourceTree = "<group>"; };
+		A67505DC17EA77E5005F847D /* LBOnlyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBOnlyViewController.h; sourceTree = "<group>"; };
+		A67505DD17EA77E5005F847D /* LBOnlyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBOnlyViewController.m; sourceTree = "<group>"; };
+		A6902B3917EA9FF2009CC5A4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = LitterBox/Resources/Images/logo.png; sourceTree = "<group>"; };
+		A6902B3E17EB432D009CC5A4 /* bg-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-568h@2x.png"; path = "LitterBox/Resources/Images/bg-568h@2x.png"; sourceTree = "<group>"; };
+		A6902B3F17EB432D009CC5A4 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = LitterBox/Resources/Images/bg.png; sourceTree = "<group>"; };
+		A6902B4017EB432D009CC5A4 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "LitterBox/Resources/Images/bg@2x.png"; sourceTree = "<group>"; };
+		B87E6AFC058F4A9FBFE0E02A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A67505BE17EA77E5005F847D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67505C517EA77E5005F847D /* UIKit.framework in Frameworks */,
+				A67505C717EA77E5005F847D /* Foundation.framework in Frameworks */,
+				A67505C917EA77E5005F847D /* CoreGraphics.framework in Frameworks */,
+				E98A1F0BE07146C19E9718F7 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A67505B817EA77E5005F847D = {
+			isa = PBXGroup;
+			children = (
+				A67505CA17EA77E5005F847D /* LitterBox */,
+				A67505C317EA77E5005F847D /* Frameworks */,
+				A67505C217EA77E5005F847D /* Products */,
+				B87E6AFC058F4A9FBFE0E02A /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		A67505C217EA77E5005F847D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A67505C117EA77E5005F847D /* LitterBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A67505C317EA77E5005F847D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A67505C417EA77E5005F847D /* UIKit.framework */,
+				A67505C617EA77E5005F847D /* Foundation.framework */,
+				A67505C817EA77E5005F847D /* CoreGraphics.framework */,
+				64409A93427A4912BD2A48AD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A67505CA17EA77E5005F847D /* LitterBox */ = {
+			isa = PBXGroup;
+			children = (
+				A67505D317EA77E5005F847D /* LBAppDelegate.h */,
+				A67505D417EA77E5005F847D /* LBAppDelegate.m */,
+				A67505DC17EA77E5005F847D /* LBOnlyViewController.h */,
+				A67505DD17EA77E5005F847D /* LBOnlyViewController.m */,
+				A67505F217EA8120005F847D /* Resources */,
+				A67505CB17EA77E5005F847D /* Supporting Files */,
+			);
+			path = LitterBox;
+			sourceTree = "<group>";
+		};
+		A67505CB17EA77E5005F847D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A67505CC17EA77E5005F847D /* LitterBox-Info.plist */,
+				A67505CD17EA77E5005F847D /* InfoPlist.strings */,
+				A67505D017EA77E5005F847D /* main.m */,
+				A67505D217EA77E5005F847D /* LitterBox-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A67505F217EA8120005F847D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6902B3017EA9D56009CC5A4 /* Images */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A6902B3017EA9D56009CC5A4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				28B1B39917EB92BE0052A9B2 /* Default-568h@2x.png */,
+				28B1B39A17EB92BE0052A9B2 /* Default.png */,
+				28B1B39B17EB92BE0052A9B2 /* Default@2x.png */,
+				28B1B39C17EB92BE0052A9B2 /* Icon@2x.png */,
+				28B1B39717EB92790052A9B2 /* Icon.png */,
+				A6902B3E17EB432D009CC5A4 /* bg-568h@2x.png */,
+				A6902B3F17EB432D009CC5A4 /* bg.png */,
+				A6902B4017EB432D009CC5A4 /* bg@2x.png */,
+				A6902B3917EA9FF2009CC5A4 /* logo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A67505C017EA77E5005F847D /* LitterBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67505EA17EA77E5005F847D /* Build configuration list for PBXNativeTarget "LitterBox" */;
+			buildPhases = (
+				14522D591A6C44C6993716E2 /* Check Pods Manifest.lock */,
+				A67505BD17EA77E5005F847D /* Sources */,
+				A67505BE17EA77E5005F847D /* Frameworks */,
+				A67505BF17EA77E5005F847D /* Resources */,
+				5BF8168E7DD94BB4BFCE3B90 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LitterBox;
+			productName = LitterBox;
+			productReference = A67505C117EA77E5005F847D /* LitterBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A67505B917EA77E5005F847D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = BlueCats;
+				TargetAttributes = {
+					A67505C017EA77E5005F847D = {
+						DevelopmentTeam = RPD85U68F7;
+					};
+				};
+			};
+			buildConfigurationList = A67505BC17EA77E5005F847D /* Build configuration list for PBXProject "LitterBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A67505B817EA77E5005F847D;
+			productRefGroup = A67505C217EA77E5005F847D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A67505C017EA77E5005F847D /* LitterBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A67505BF17EA77E5005F847D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B1B39817EB92790052A9B2 /* Icon.png in Resources */,
+				A67505CF17EA77E5005F847D /* InfoPlist.strings in Resources */,
+				A6902B3B17EA9FF2009CC5A4 /* logo.png in Resources */,
+				28B1B39F17EB92BE0052A9B2 /* Default@2x.png in Resources */,
+				28B1B39E17EB92BE0052A9B2 /* Default.png in Resources */,
+				A6902B4117EB432D009CC5A4 /* bg-568h@2x.png in Resources */,
+				A6902B4217EB432D009CC5A4 /* bg.png in Resources */,
+				28B1B39D17EB92BE0052A9B2 /* Default-568h@2x.png in Resources */,
+				A6902B4317EB432D009CC5A4 /* bg@2x.png in Resources */,
+				28B1B3A017EB92BE0052A9B2 /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14522D591A6C44C6993716E2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BF8168E7DD94BB4BFCE3B90 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A67505BD17EA77E5005F847D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67505D117EA77E5005F847D /* main.m in Sources */,
+				A67505D517EA77E5005F847D /* LBAppDelegate.m in Sources */,
+				A67505DE17EA77E5005F847D /* LBOnlyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A67505CD17EA77E5005F847D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67505CE17EA77E5005F847D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A67505E817EA77E5005F847D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A67505E917EA77E5005F847D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A67505EB17EA77E5005F847D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B87E6AFC058F4A9FBFE0E02A /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LitterBox/LitterBox-Prefix.pch";
+				INFOPLIST_FILE = "LitterBox/LitterBox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A67505EC17EA77E5005F847D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B87E6AFC058F4A9FBFE0E02A /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LitterBox/LitterBox-Prefix.pch";
+				INFOPLIST_FILE = "LitterBox/LitterBox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A67505BC17EA77E5005F847D /* Build configuration list for PBXProject "LitterBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67505E817EA77E5005F847D /* Debug */,
+				A67505E917EA77E5005F847D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67505EA17EA77E5005F847D /* Build configuration list for PBXNativeTarget "LitterBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67505EB17EA77E5005F847D /* Debug */,
+				A67505EC17EA77E5005F847D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A67505B917EA77E5005F847D /* Project object */;
+}
