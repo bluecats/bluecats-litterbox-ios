@@ -11,18 +11,7 @@
 #import "BCMicroLocation.h"
 #import "BCSite.h"
 #import "BCCategory.h"
-
-const CGFloat kSiteNameLabelHeight = 65.0f;
-const CGFloat kSiteNameLabelXOffset = 70.0f;
-const CGFloat kSiteNameLabelYOffset = 10.0f;
-
-const CGFloat kSiteGreetingLabelHeight = 50.0f;
-const CGFloat kSiteGreetingLabelXOffset = 70.0f;
-const CGFloat kSiteGreetingLabelYOffset = 92.0f;
-
-const CGFloat kCategoriesLabelWidth = 300.0f;
-const CGFloat kCategoriesLabelHeight = 210.0f;
-const CGFloat kCategoriesLabelYOffset = 275.0f;
+#import "LBLayoutProvider.h"
 
 @interface LBOnlyViewController ()
 
@@ -42,14 +31,9 @@ const CGFloat kCategoriesLabelYOffset = 275.0f;
 - (UILabel *)siteNameLabel
 {
     if (!_siteNameLabel) {
-        
-        CGRect labelFrame = self.view.bounds;
-        labelFrame.size.height = kSiteNameLabelHeight;
-        labelFrame.origin.y = -kSiteNameLabelHeight;
-        labelFrame.origin.x = kSiteNameLabelXOffset;
-        labelFrame.size.width = labelFrame.size.width - kSiteNameLabelXOffset;
+        CGRect labelFrame = [LBLayoutProvider siteNameLabelFrameForBounds:self.view.bounds hidden:YES];
         _siteNameLabel = [[UILabel alloc] initWithFrame:labelFrame];
-        _siteNameLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:32.0f];
+        _siteNameLabel.font = [LBLayoutProvider siteNameLabelFont];
         _siteNameLabel.textColor = [UIColor colorWithRed:0.0f/255.0f green:106.0f/255.0f blue:173.0f/255.0f alpha:1.0f];
         _siteNameLabel.textAlignment = NSTextAlignmentCenter;
         _siteNameLabel.backgroundColor = [UIColor clearColor];
@@ -60,14 +44,9 @@ const CGFloat kCategoriesLabelYOffset = 275.0f;
 - (UILabel *)siteGreetingLabel
 {
     if (!_siteGreetingLabel) {
-        
-        CGRect labelFrame = self.view.bounds;
-        labelFrame.size.height = kSiteGreetingLabelHeight;
-        labelFrame.origin.y = kSiteGreetingLabelYOffset;
-        labelFrame.size.width = labelFrame.size.width - kSiteGreetingLabelXOffset;
-        labelFrame.origin.x = self.view.bounds.size.width;
+        CGRect labelFrame = [LBLayoutProvider siteGreetingLabelFrameForBounds:self.view.bounds hidden:YES];
         _siteGreetingLabel = [[UILabel alloc] initWithFrame:labelFrame];
-        _siteGreetingLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:14.0f];
+        _siteGreetingLabel.font = [LBLayoutProvider siteGreetingLabelFont];
         _siteGreetingLabel.textColor = [UIColor whiteColor];
         _siteGreetingLabel.textAlignment = NSTextAlignmentLeft;
         _siteGreetingLabel.backgroundColor = [UIColor clearColor];
@@ -79,12 +58,7 @@ const CGFloat kCategoriesLabelYOffset = 275.0f;
 - (UILabel *)categoriesLabel
 {
     if (!_categoriesLabel) {
-        
-        CGRect labelFrame = self.view.bounds;;
-        labelFrame.size.height = kCategoriesLabelHeight;
-        labelFrame.origin.y = kCategoriesLabelYOffset;
-        labelFrame.size.width = kCategoriesLabelWidth;
-        labelFrame.origin.x = (self.view.bounds.size.width - kCategoriesLabelWidth) / 2.0;
+        CGRect labelFrame = [LBLayoutProvider categoriesLabelFrameForBounds:self.view.bounds];
         _categoriesLabel = [[UILabel alloc] initWithFrame:labelFrame];
         _categoriesLabel.textColor = [UIColor whiteColor];
         _categoriesLabel.textAlignment = NSTextAlignmentCenter;
@@ -161,14 +135,9 @@ const CGFloat kCategoriesLabelYOffset = 275.0f;
 {
     [UIView animateWithDuration:1.25f animations:^{
         
-        if (site) {
-            self.siteNameLabel.text = site.name.uppercaseString;
-        }
-        else {
-            self.siteNameLabel.text = nil;
-        }
+        self.siteNameLabel.text = site ? site.name.uppercaseString : nil;
         
-        self.siteNameLabel.frame = CGRectOffset(self.siteNameLabel.frame, 0, (self.siteNameLabel.frame.size.height + kSiteNameLabelYOffset));
+        self.siteNameLabel.frame = [LBLayoutProvider siteNameLabelFrameForBounds:self.view.bounds hidden:NO];
         self.siteNameLabel.alpha = 1.0f;
     } completion:^(BOOL finished) {
         if (finished) {
@@ -177,14 +146,9 @@ const CGFloat kCategoriesLabelYOffset = 275.0f;
     
     [UIView animateWithDuration:0.75f animations:^{
         
-        if (site) {
-            self.siteGreetingLabel.text = site.greeting;
-        }
-        else {
-            self.siteGreetingLabel.text = nil;
-        }
+        self.siteGreetingLabel.text = site ? site.greeting : nil;
         
-        self.siteGreetingLabel.frame = CGRectOffset(self.siteGreetingLabel.frame, -(self.view.bounds.size.width - kSiteGreetingLabelXOffset), 0.0f);
+        self.siteGreetingLabel.frame = [LBLayoutProvider siteGreetingLabelFrameForBounds:self.view.bounds hidden:NO];
         self.siteGreetingLabel.alpha = 1.0f;
     } completion:^(BOOL finished) {
         if (finished) {
@@ -195,7 +159,7 @@ const CGFloat kCategoriesLabelYOffset = 275.0f;
 - (void)animateDidExitSite:(BCSite *)site
 {
     [UIView animateWithDuration:1.25f animations:^{
-        self.siteNameLabel.frame = CGRectOffset(self.siteNameLabel.frame, 0, -(self.siteNameLabel.frame.size.height + kSiteNameLabelYOffset));
+        self.siteNameLabel.frame = [LBLayoutProvider siteNameLabelFrameForBounds:self.view.bounds hidden:YES];
         self.siteNameLabel.alpha = 0.0f;
     } completion:^(BOOL finished) {
         if (finished) {
@@ -204,7 +168,7 @@ const CGFloat kCategoriesLabelYOffset = 275.0f;
     }];
     
     [UIView animateWithDuration:0.75f animations:^{
-        self.siteGreetingLabel.frame = CGRectOffset(self.siteGreetingLabel.frame, (self.view.bounds.size.width - kSiteGreetingLabelXOffset), 0.0f);
+        self.siteGreetingLabel.frame = [LBLayoutProvider siteGreetingLabelFrameForBounds:self.view.bounds hidden:YES];
         self.siteGreetingLabel.alpha = 0.0f;
     } completion:^(BOOL finished) {
         if (finished) {
@@ -225,7 +189,7 @@ const CGFloat kCategoriesLabelYOffset = 275.0f;
     
     NSUInteger startIndex = 0;
     for (BCCategory *category in categories) {
-        [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:(arc4random() % 36 + 16)] range:NSMakeRange(startIndex, category.name.length)];
+        [attributedString addAttribute:NSFontAttributeName value:[LBLayoutProvider categoryLabelFont] range:NSMakeRange(startIndex, category.name.length)];
         startIndex += category.name.length + 1;
     }
     

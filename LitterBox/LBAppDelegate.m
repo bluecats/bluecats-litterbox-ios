@@ -15,8 +15,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *appDefaults = @{@"bcAppToken" : @"YOUR_BCAPPTOKEN"};
+    [defaults registerDefaults:appDefaults];
+    [defaults synchronize];
+    
+    NSString *appToken = [defaults stringForKey:@"bcAppToken"];
+    
     [BlueCatsSDK setOptions:@{BCOptionUseStageApi: @"YES"}];
-    [BlueCatsSDK startPurringWithAppToken:@"YourBCAppToken"];
+    [BlueCatsSDK startPurringWithAppToken:appToken];
     [[BCMicroLocationManager sharedManager] startUpdatingMicroLocation];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
