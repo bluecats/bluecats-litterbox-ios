@@ -13,7 +13,7 @@ bluecats-litterbox-ios
  + For all subsequent updates to this app, run 'pod update' from your directory (do not run 'pod install' a second time)
         
         
-- If you have used cocoa pods before:
+- If you have used cocoapods before:
  + Navigate to your repo directory and run 'pod install'
  + For all subsequent updates to this app, run 'pod update' from your directory (do not run 'pod install' a second time)
 
