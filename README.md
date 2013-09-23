@@ -7,10 +7,10 @@ bluecats-litterbox-ios
 
 ####Step 2:  Prepare for pods.
 
-If you have never used cocoapods:
- a.  Follow the install instructions from cocoapods.org
- b.  Upon completion of the install, navigate to your repo directory and run 'pod install'
- c.  For all subsequent updates to this app, run 'pod update' from your directory (do not run 'pod install' a second time)
+	If you have never used cocoapods:
+ 	a.  Follow the install instructions from cocoapods.org
+ 	b.  Upon completion of the install, navigate to your repo directory and run 'pod install'
+ 	c.  For all subsequent updates to this app, run 'pod update' from your directory (do not run 'pod install' a second time)
         
         
 If you have used cocoa pods before:
