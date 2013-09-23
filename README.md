@@ -1,6 +1,6 @@
 bluecats-litterbox-ios
 ======================
-##Here's the basics:
+###Here's the basics:
 
 
 ####Step 1:  clone the repo into a directory of your choosing.
