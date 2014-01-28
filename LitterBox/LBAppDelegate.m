@@ -7,31 +7,62 @@
 //
 
 #import "LBAppDelegate.h"
-#import "LBOnlyViewController.h"
+#import "LBNearbySitesViewController.h"
 #import "BlueCatsSDK.h"
 #import "BCMicroLocationManager.h"
+#import "FXKeychain.h"
+#import "LBConstants.h"
+#import "NSString+LBAdditions.h"
 
 @implementation LBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSDictionary *appDefaults = @{@"bcAppToken" : @"YOUR_BCAPPTOKEN"};
-    [defaults registerDefaults:appDefaults];
-    [defaults synchronize];
+    UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (locationNotification) {
+        application.applicationIconBadgeNumber = 0;
+    }
     
-    NSString *appToken = [defaults stringForKey:@"bcAppToken"];
+    //[FXKeychain defaultKeychain][LBKeychainKeyAppToken] = @"bc7818e0-adb0-4783-bb15-4fbedcc6a120";
     
-    [BlueCatsSDK setOptions:@{BCOptionUseStageApi: @"YES"}];
-    [BlueCatsSDK startPurringWithAppToken:appToken];
-    [[BCMicroLocationManager sharedManager] startUpdatingMicroLocation];
+    
+    [BlueCatsSDK startPurring];
+    
+    NSString *appToken = [FXKeychain defaultKeychain][LBKeychainKeyAppToken];
+    if ([appToken isGuid]) {
+        [BlueCatsSDK setAppToken:appToken];
+        [[BCMicroLocationManager sharedManager] startUpdatingMicroLocation];
+    }
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
-    LBOnlyViewController *onlyViewController = [[LBOnlyViewController alloc] init];
-    self.window.rootViewController = onlyViewController;
+    
+    LBNearbySitesViewController *sitesViewController = [[LBNearbySitesViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:sitesViewController];
     [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    UIApplicationState state = [application applicationState];
+    if (state == UIApplicationStateActive) {
+        
+        NSBundle *bundle = [NSBundle mainBundle];
+        NSDictionary *info = [bundle infoDictionary];
+        NSString *prodName = [info objectForKey:@"CFBundleDisplayName"];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:prodName
+                                                        message:notification.alertBody
+                                                       delegate:self
+                                              cancelButtonTitle:notification.alertAction.length > 0 ? notification.alertAction : @"Ok"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+    
+    //[[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
+    
+    application.applicationIconBadgeNumber = 0;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

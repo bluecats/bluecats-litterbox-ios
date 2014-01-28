@@ -10,16 +10,20 @@
 
 @interface LBLayoutProvider : NSObject
 
++ (CGRect)siteImageViewFrameForBounds:(CGRect)bounds imageSize:(CGSize)imageSize hidden:(BOOL)hidden;
+
 + (CGRect)siteNameLabelFrameForBounds:(CGRect)bounds hidden:(BOOL)hidden;
 
 + (UIFont *)siteNameLabelFont;
 
-+ (CGRect)siteGreetingLabelFrameForBounds:(CGRect)bounds hidden:(BOOL)hidden;
++ (CGRect)siteStateLabelFrameForBounds:(CGRect)bounds hidden:(BOOL)hidden;
 
-+ (UIFont *)siteGreetingLabelFont;
++ (UIFont *)siteStateLabelFont;
 
-+ (CGRect)categoriesLabelFrameForBounds:(CGRect)bounds;
++ (CGRect)valuesLabelFrameForBounds:(CGRect)bounds;
 
-+ (UIFont *)categoryLabelFont;
++ (UIFont *)valuesLabelFont;
+
++ (CGRect)keySegmenetedControlFrameForBounds:(CGRect)bounds;
 
 @end

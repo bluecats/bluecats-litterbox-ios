@@ -1,5 +1,8 @@
-platform :ios, '6.0'
+platform :ios, '7.0'
 
 xcodeproj 'LitterBox.xcodeproj'
 
-pod 'BlueCatsSDK', :git => 'https://github.com/bluecats/bluecats-ios-sdk.git'
+pod 'BlueCatsSDK', :git => 'https://github.com/bluecats/bluecats-ios-sdk.git', :tag => '0.1.1'
+pod 'OrderedDictionary', '~> 1.1'
+pod 'FXKeychain', '~> 1.4'
+pod 'ELCTextFieldCell', '~> 0.2.0'

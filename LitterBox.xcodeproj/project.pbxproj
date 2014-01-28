@@ -11,14 +11,33 @@
 		A63B9C9817F0203100234B47 /* bg~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = A63B9C9617F0203100234B47 /* bg~ipad.png */; };
 		A63B9C9B17F0230C00234B47 /* LBLayoutProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A63B9C9A17F0230C00234B47 /* LBLayoutProvider.m */; };
 		A63B9C9D17F0380B00234B47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63B9C9C17F0380B00234B47 /* Images.xcassets */; };
-		A63B9CA117F04CD300234B47 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A63B9CA017F04CD300234B47 /* Settings.bundle */; };
+		A6445C1A1843EDF4002D67BA /* beacon-icon-black.png in Resources */ = {isa = PBXBuildFile; fileRef = A6445C191843EDF4002D67BA /* beacon-icon-black.png */; };
+		A6445C1C1843EECA002D67BA /* beacon-icon-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6445C1B1843EECA002D67BA /* beacon-icon-black@2x.png */; };
+		A663E4F11835BE5A00409C90 /* LBCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A663E4F01835BE5A00409C90 /* LBCategoriesViewController.m */; };
+		A663E4FC1835F6F300409C90 /* cathead-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A663E4F61835F6F300409C90 /* cathead-logo.png */; };
+		A663E4FD1835F6F300409C90 /* cathead-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A663E4F71835F6F300409C90 /* cathead-logo@2x.png */; };
+		A663E4FE1835F6F300409C90 /* site-icon-white.png in Resources */ = {isa = PBXBuildFile; fileRef = A663E4F81835F6F300409C90 /* site-icon-white.png */; };
+		A663E4FF1835F6F300409C90 /* site-icon-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A663E4F91835F6F300409C90 /* site-icon-white@2x.png */; };
+		A663E5001835F6F300409C90 /* site-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A663E4FA1835F6F300409C90 /* site-icon.png */; };
+		A663E5011835F6F300409C90 /* site-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A663E4FB1835F6F300409C90 /* site-icon@2x.png */; };
+		A663E50C18373DDC00409C90 /* LBSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A663E50B18373DDC00409C90 /* LBSettingsViewController.m */; };
+		A663E517183A85DD00409C90 /* NSString+LBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A663E516183A85DD00409C90 /* NSString+LBAdditions.m */; };
+		A663E51A183A8AE800409C90 /* LBConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A663E519183A8AE800409C90 /* LBConstants.m */; };
+		A663E520183B33D900409C90 /* LBLocalNotificationScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A663E51F183B33D900409C90 /* LBLocalNotificationScheduleViewController.m */; };
+		A663E523183B362900409C90 /* LBSiteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A663E522183B362900409C90 /* LBSiteDetailViewController.m */; };
+		A663E529183C0AF100409C90 /* LBLocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A663E528183C0AF100409C90 /* LBLocalNotificationViewController.m */; };
+		A663E52C183C0EAC00409C90 /* no-sites.png in Resources */ = {isa = PBXBuildFile; fileRef = A663E52A183C0EAC00409C90 /* no-sites.png */; };
+		A663E52D183C0EAC00409C90 /* no-sites@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A663E52B183C0EAC00409C90 /* no-sites@2x.png */; };
+		A663E530183C1ED400409C90 /* LBOptionPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A663E52F183C1ED300409C90 /* LBOptionPickerViewController.m */; };
+		A663E533183C251F00409C90 /* NSDate+LBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A663E532183C251F00409C90 /* NSDate+LBAdditions.m */; };
 		A67505C517EA77E5005F847D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67505C417EA77E5005F847D /* UIKit.framework */; };
 		A67505C717EA77E5005F847D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67505C617EA77E5005F847D /* Foundation.framework */; };
 		A67505C917EA77E5005F847D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67505C817EA77E5005F847D /* CoreGraphics.framework */; };
 		A67505CF17EA77E5005F847D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67505CD17EA77E5005F847D /* InfoPlist.strings */; };
 		A67505D117EA77E5005F847D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67505D017EA77E5005F847D /* main.m */; };
 		A67505D517EA77E5005F847D /* LBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A67505D417EA77E5005F847D /* LBAppDelegate.m */; };
-		A67505DE17EA77E5005F847D /* LBOnlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67505DD17EA77E5005F847D /* LBOnlyViewController.m */; };
+		A67505DE17EA77E5005F847D /* LBMicroLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67505DD17EA77E5005F847D /* LBMicroLocationViewController.m */; };
+		A6867DCE18359E5F000ABA8A /* LBNearbySitesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6867DCD18359E5F000ABA8A /* LBNearbySitesViewController.m */; };
 		A6902B4117EB432D009CC5A4 /* bg-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6902B3E17EB432D009CC5A4 /* bg-568h@2x.png */; };
 		A6902B4217EB432D009CC5A4 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A6902B3F17EB432D009CC5A4 /* bg.png */; };
 		A6902B4317EB432D009CC5A4 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6902B4017EB432D009CC5A4 /* bg@2x.png */; };
@@ -32,8 +51,35 @@
 		A63B9C9917F0230C00234B47 /* LBLayoutProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLayoutProvider.h; sourceTree = "<group>"; };
 		A63B9C9A17F0230C00234B47 /* LBLayoutProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLayoutProvider.m; sourceTree = "<group>"; };
 		A63B9C9C17F0380B00234B47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A63B9CA017F04CD300234B47 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		A67505C117EA77E5005F847D /* LitterBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LitterBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6445C191843EDF4002D67BA /* beacon-icon-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beacon-icon-black.png"; path = "LitterBox/Resources/Images/beacon-icon-black.png"; sourceTree = "<group>"; };
+		A6445C1B1843EECA002D67BA /* beacon-icon-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beacon-icon-black@2x.png"; path = "LitterBox/Resources/Images/beacon-icon-black@2x.png"; sourceTree = "<group>"; };
+		A663E4EF1835BE5A00409C90 /* LBCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBCategoriesViewController.h; sourceTree = "<group>"; };
+		A663E4F01835BE5A00409C90 /* LBCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCategoriesViewController.m; sourceTree = "<group>"; };
+		A663E4F61835F6F300409C90 /* cathead-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cathead-logo.png"; path = "LitterBox/Resources/Images/cathead-logo.png"; sourceTree = "<group>"; };
+		A663E4F71835F6F300409C90 /* cathead-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cathead-logo@2x.png"; path = "LitterBox/Resources/Images/cathead-logo@2x.png"; sourceTree = "<group>"; };
+		A663E4F81835F6F300409C90 /* site-icon-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "site-icon-white.png"; path = "LitterBox/Resources/Images/site-icon-white.png"; sourceTree = "<group>"; };
+		A663E4F91835F6F300409C90 /* site-icon-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "site-icon-white@2x.png"; path = "LitterBox/Resources/Images/site-icon-white@2x.png"; sourceTree = "<group>"; };
+		A663E4FA1835F6F300409C90 /* site-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "site-icon.png"; path = "LitterBox/Resources/Images/site-icon.png"; sourceTree = "<group>"; };
+		A663E4FB1835F6F300409C90 /* site-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "site-icon@2x.png"; path = "LitterBox/Resources/Images/site-icon@2x.png"; sourceTree = "<group>"; };
+		A663E50A18373DDC00409C90 /* LBSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSettingsViewController.h; sourceTree = "<group>"; };
+		A663E50B18373DDC00409C90 /* LBSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSettingsViewController.m; sourceTree = "<group>"; };
+		A663E515183A85DD00409C90 /* NSString+LBAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LBAdditions.h"; sourceTree = "<group>"; };
+		A663E516183A85DD00409C90 /* NSString+LBAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LBAdditions.m"; sourceTree = "<group>"; };
+		A663E518183A8AE800409C90 /* LBConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBConstants.h; sourceTree = "<group>"; };
+		A663E519183A8AE800409C90 /* LBConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBConstants.m; sourceTree = "<group>"; };
+		A663E51E183B33D900409C90 /* LBLocalNotificationScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLocalNotificationScheduleViewController.h; sourceTree = "<group>"; };
+		A663E51F183B33D900409C90 /* LBLocalNotificationScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLocalNotificationScheduleViewController.m; sourceTree = "<group>"; };
+		A663E521183B362900409C90 /* LBSiteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSiteDetailViewController.h; sourceTree = "<group>"; };
+		A663E522183B362900409C90 /* LBSiteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSiteDetailViewController.m; sourceTree = "<group>"; };
+		A663E527183C0AF100409C90 /* LBLocalNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLocalNotificationViewController.h; sourceTree = "<group>"; };
+		A663E528183C0AF100409C90 /* LBLocalNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLocalNotificationViewController.m; sourceTree = "<group>"; };
+		A663E52A183C0EAC00409C90 /* no-sites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no-sites.png"; path = "LitterBox/Resources/Images/no-sites.png"; sourceTree = "<group>"; };
+		A663E52B183C0EAC00409C90 /* no-sites@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no-sites@2x.png"; path = "LitterBox/Resources/Images/no-sites@2x.png"; sourceTree = "<group>"; };
+		A663E52E183C1ED300409C90 /* LBOptionPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBOptionPickerViewController.h; sourceTree = "<group>"; };
+		A663E52F183C1ED300409C90 /* LBOptionPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBOptionPickerViewController.m; sourceTree = "<group>"; };
+		A663E531183C251F00409C90 /* NSDate+LBAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LBAdditions.h"; sourceTree = "<group>"; };
+		A663E532183C251F00409C90 /* NSDate+LBAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LBAdditions.m"; sourceTree = "<group>"; };
+		A67505C117EA77E5005F847D /* BC LitterBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BC LitterBox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67505C417EA77E5005F847D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A67505C617EA77E5005F847D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A67505C817EA77E5005F847D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,8 +89,10 @@
 		A67505D217EA77E5005F847D /* LitterBox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LitterBox-Prefix.pch"; sourceTree = "<group>"; };
 		A67505D317EA77E5005F847D /* LBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBAppDelegate.h; sourceTree = "<group>"; };
 		A67505D417EA77E5005F847D /* LBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBAppDelegate.m; sourceTree = "<group>"; };
-		A67505DC17EA77E5005F847D /* LBOnlyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBOnlyViewController.h; sourceTree = "<group>"; };
-		A67505DD17EA77E5005F847D /* LBOnlyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBOnlyViewController.m; sourceTree = "<group>"; };
+		A67505DC17EA77E5005F847D /* LBMicroLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBMicroLocationViewController.h; sourceTree = "<group>"; };
+		A67505DD17EA77E5005F847D /* LBMicroLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBMicroLocationViewController.m; sourceTree = "<group>"; };
+		A6867DCC18359E5F000ABA8A /* LBNearbySitesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNearbySitesViewController.h; sourceTree = "<group>"; };
+		A6867DCD18359E5F000ABA8A /* LBNearbySitesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNearbySitesViewController.m; sourceTree = "<group>"; };
 		A6902B3E17EB432D009CC5A4 /* bg-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-568h@2x.png"; path = "LitterBox/Resources/Images/bg-568h@2x.png"; sourceTree = "<group>"; };
 		A6902B3F17EB432D009CC5A4 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = LitterBox/Resources/Images/bg.png; sourceTree = "<group>"; };
 		A6902B4017EB432D009CC5A4 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "LitterBox/Resources/Images/bg@2x.png"; sourceTree = "<group>"; };
@@ -66,6 +114,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A663E50718373D4F00409C90 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		A663E50D18373F6B00409C90 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A663E4EF1835BE5A00409C90 /* LBCategoriesViewController.h */,
+				A663E4F01835BE5A00409C90 /* LBCategoriesViewController.m */,
+				A63B9C9917F0230C00234B47 /* LBLayoutProvider.h */,
+				A63B9C9A17F0230C00234B47 /* LBLayoutProvider.m */,
+				A663E51E183B33D900409C90 /* LBLocalNotificationScheduleViewController.h */,
+				A663E51F183B33D900409C90 /* LBLocalNotificationScheduleViewController.m */,
+				A663E527183C0AF100409C90 /* LBLocalNotificationViewController.h */,
+				A663E528183C0AF100409C90 /* LBLocalNotificationViewController.m */,
+				A67505DC17EA77E5005F847D /* LBMicroLocationViewController.h */,
+				A67505DD17EA77E5005F847D /* LBMicroLocationViewController.m */,
+				A6867DCC18359E5F000ABA8A /* LBNearbySitesViewController.h */,
+				A6867DCD18359E5F000ABA8A /* LBNearbySitesViewController.m */,
+				A663E52E183C1ED300409C90 /* LBOptionPickerViewController.h */,
+				A663E52F183C1ED300409C90 /* LBOptionPickerViewController.m */,
+				A663E50A18373DDC00409C90 /* LBSettingsViewController.h */,
+				A663E50B18373DDC00409C90 /* LBSettingsViewController.m */,
+				A663E521183B362900409C90 /* LBSiteDetailViewController.h */,
+				A663E522183B362900409C90 /* LBSiteDetailViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A663E514183A85BB00409C90 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A663E531183C251F00409C90 /* NSDate+LBAdditions.h */,
+				A663E532183C251F00409C90 /* NSDate+LBAdditions.m */,
+				A663E515183A85DD00409C90 /* NSString+LBAdditions.h */,
+				A663E516183A85DD00409C90 /* NSString+LBAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		A67505B817EA77E5005F847D = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +170,7 @@
 		A67505C217EA77E5005F847D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A67505C117EA77E5005F847D /* LitterBox.app */,
+				A67505C117EA77E5005F847D /* BC LitterBox.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,14 +189,14 @@
 		A67505CA17EA77E5005F847D /* LitterBox */ = {
 			isa = PBXGroup;
 			children = (
+				A663E514183A85BB00409C90 /* Categories */,
+				A663E50D18373F6B00409C90 /* Controllers */,
+				A63B9C9C17F0380B00234B47 /* Images.xcassets */,
 				A67505D317EA77E5005F847D /* LBAppDelegate.h */,
 				A67505D417EA77E5005F847D /* LBAppDelegate.m */,
-				A63B9C9917F0230C00234B47 /* LBLayoutProvider.h */,
-				A63B9C9A17F0230C00234B47 /* LBLayoutProvider.m */,
-				A67505DC17EA77E5005F847D /* LBOnlyViewController.h */,
-				A67505DD17EA77E5005F847D /* LBOnlyViewController.m */,
+				A663E518183A8AE800409C90 /* LBConstants.h */,
+				A663E519183A8AE800409C90 /* LBConstants.m */,
 				A67505F217EA8120005F847D /* Resources */,
-				A63B9C9C17F0380B00234B47 /* Images.xcassets */,
 				A67505CB17EA77E5005F847D /* Supporting Files */,
 			);
 			path = LitterBox;
@@ -118,7 +209,6 @@
 				A67505CD17EA77E5005F847D /* InfoPlist.strings */,
 				A67505D017EA77E5005F847D /* main.m */,
 				A67505D217EA77E5005F847D /* LitterBox-Prefix.pch */,
-				A63B9CA017F04CD300234B47 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -126,6 +216,7 @@
 		A67505F217EA8120005F847D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A663E50718373D4F00409C90 /* XIBs */,
 				A6902B3017EA9D56009CC5A4 /* Images */,
 			);
 			name = Resources;
@@ -135,11 +226,21 @@
 		A6902B3017EA9D56009CC5A4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				A63B9C9517F0203100234B47 /* bg@2x~ipad.png */,
-				A63B9C9617F0203100234B47 /* bg~ipad.png */,
+				A6445C191843EDF4002D67BA /* beacon-icon-black.png */,
+				A6445C1B1843EECA002D67BA /* beacon-icon-black@2x.png */,
 				A6902B3E17EB432D009CC5A4 /* bg-568h@2x.png */,
 				A6902B3F17EB432D009CC5A4 /* bg.png */,
 				A6902B4017EB432D009CC5A4 /* bg@2x.png */,
+				A63B9C9517F0203100234B47 /* bg@2x~ipad.png */,
+				A63B9C9617F0203100234B47 /* bg~ipad.png */,
+				A663E4F61835F6F300409C90 /* cathead-logo.png */,
+				A663E4F71835F6F300409C90 /* cathead-logo@2x.png */,
+				A663E52A183C0EAC00409C90 /* no-sites.png */,
+				A663E52B183C0EAC00409C90 /* no-sites@2x.png */,
+				A663E4F81835F6F300409C90 /* site-icon-white.png */,
+				A663E4F91835F6F300409C90 /* site-icon-white@2x.png */,
+				A663E4FA1835F6F300409C90 /* site-icon.png */,
+				A663E4FB1835F6F300409C90 /* site-icon@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -147,9 +248,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A67505C017EA77E5005F847D /* LitterBox */ = {
+		A67505C017EA77E5005F847D /* BC LitterBox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A67505EA17EA77E5005F847D /* Build configuration list for PBXNativeTarget "LitterBox" */;
+			buildConfigurationList = A67505EA17EA77E5005F847D /* Build configuration list for PBXNativeTarget "BC LitterBox" */;
 			buildPhases = (
 				14522D591A6C44C6993716E2 /* Check Pods Manifest.lock */,
 				A67505BD17EA77E5005F847D /* Sources */,
@@ -161,9 +262,9 @@
 			);
 			dependencies = (
 			);
-			name = LitterBox;
+			name = "BC LitterBox";
 			productName = LitterBox;
-			productReference = A67505C117EA77E5005F847D /* LitterBox.app */;
+			productReference = A67505C117EA77E5005F847D /* BC LitterBox.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,6 +276,11 @@
 				CLASSPREFIX = LB;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = BlueCats;
+				TargetAttributes = {
+					A67505C017EA77E5005F847D = {
+						DevelopmentTeam = RPD85U68F7;
+					};
+				};
 			};
 			buildConfigurationList = A67505BC17EA77E5005F847D /* Build configuration list for PBXProject "LitterBox" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -188,7 +294,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A67505C017EA77E5005F847D /* LitterBox */,
+				A67505C017EA77E5005F847D /* BC LitterBox */,
 			);
 		};
 /* End PBXProject section */
@@ -198,11 +304,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A63B9CA117F04CD300234B47 /* Settings.bundle in Resources */,
+				A6445C1A1843EDF4002D67BA /* beacon-icon-black.png in Resources */,
+				A663E52D183C0EAC00409C90 /* no-sites@2x.png in Resources */,
+				A663E4FD1835F6F300409C90 /* cathead-logo@2x.png in Resources */,
+				A663E4FE1835F6F300409C90 /* site-icon-white.png in Resources */,
 				A63B9C9817F0203100234B47 /* bg~ipad.png in Resources */,
+				A663E52C183C0EAC00409C90 /* no-sites.png in Resources */,
+				A663E5011835F6F300409C90 /* site-icon@2x.png in Resources */,
 				A67505CF17EA77E5005F847D /* InfoPlist.strings in Resources */,
+				A663E4FC1835F6F300409C90 /* cathead-logo.png in Resources */,
+				A663E5001835F6F300409C90 /* site-icon.png in Resources */,
 				A6902B4117EB432D009CC5A4 /* bg-568h@2x.png in Resources */,
+				A6445C1C1843EECA002D67BA /* beacon-icon-black@2x.png in Resources */,
 				A6902B4217EB432D009CC5A4 /* bg.png in Resources */,
+				A663E4FF1835F6F300409C90 /* site-icon-white@2x.png in Resources */,
 				A6902B4317EB432D009CC5A4 /* bg@2x.png in Resources */,
 				A63B9C9717F0203100234B47 /* bg@2x~ipad.png in Resources */,
 				A63B9C9D17F0380B00234B47 /* Images.xcassets in Resources */,
@@ -249,10 +364,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A663E523183B362900409C90 /* LBSiteDetailViewController.m in Sources */,
+				A663E4F11835BE5A00409C90 /* LBCategoriesViewController.m in Sources */,
+				A663E51A183A8AE800409C90 /* LBConstants.m in Sources */,
 				A63B9C9B17F0230C00234B47 /* LBLayoutProvider.m in Sources */,
+				A663E517183A85DD00409C90 /* NSString+LBAdditions.m in Sources */,
+				A663E533183C251F00409C90 /* NSDate+LBAdditions.m in Sources */,
 				A67505D117EA77E5005F847D /* main.m in Sources */,
+				A663E520183B33D900409C90 /* LBLocalNotificationScheduleViewController.m in Sources */,
+				A6867DCE18359E5F000ABA8A /* LBNearbySitesViewController.m in Sources */,
 				A67505D517EA77E5005F847D /* LBAppDelegate.m in Sources */,
-				A67505DE17EA77E5005F847D /* LBOnlyViewController.m in Sources */,
+				A663E529183C0AF100409C90 /* LBLocalNotificationViewController.m in Sources */,
+				A663E530183C1ED400409C90 /* LBOptionPickerViewController.m in Sources */,
+				A67505DE17EA77E5005F847D /* LBMicroLocationViewController.m in Sources */,
+				A663E50C18373DDC00409C90 /* LBSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +440,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -340,10 +465,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LitterBox/LitterBox-Prefix.pch";
 				INFOPLIST_FILE = "LitterBox/LitterBox-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -355,15 +480,15 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LitterBox/LitterBox-Prefix.pch";
 				INFOPLIST_FILE = "LitterBox/LitterBox-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -380,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A67505EA17EA77E5005F847D /* Build configuration list for PBXNativeTarget "LitterBox" */ = {
+		A67505EA17EA77E5005F847D /* Build configuration list for PBXNativeTarget "BC LitterBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A67505EB17EA77E5005F847D /* Debug */,
