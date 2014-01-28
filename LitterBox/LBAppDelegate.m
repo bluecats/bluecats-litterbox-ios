@@ -23,9 +23,6 @@
         application.applicationIconBadgeNumber = 0;
     }
     
-    //[FXKeychain defaultKeychain][LBKeychainKeyAppToken] = @"bc7818e0-adb0-4783-bb15-4fbedcc6a120";
-    
-    
     [BlueCatsSDK startPurring];
     
     NSString *appToken = [FXKeychain defaultKeychain][LBKeychainKeyAppToken];
@@ -59,8 +56,6 @@
                                               otherButtonTitles:nil];
         [alert show];
     }
-    
-    //[[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
     
     application.applicationIconBadgeNumber = 0;
 }
