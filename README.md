@@ -18,25 +18,7 @@ bluecats-litterbox-ios
  + For all subsequent updates to this app, run 'pod update' from your directory (do not run 'pod install' a second time)
 
 
-####Step 3:  Request a BCAppToken from theteam@bluecats.com
-
-####Step 4:  In  LBAppDelegate.m, replace @"YourBCAppToken" with your BCAppToken
-
-``` objective-c
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [BlueCatsSDK setOptions:@{BCOptionUseStageApi: @"YES"}];
-    [BlueCatsSDK startPurringWithAppToken:@"YourBCAppToken"];
-    [[BCMicroLocationManager sharedManager] startUpdatingMicroLocation];
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
-    LBOnlyViewController *onlyViewController = [[LBOnlyViewController alloc] init];
-    self.window.rootViewController = onlyViewController;
-    [self.window makeKeyAndVisible];
-    return YES;
-}
-```
+####Step 3:  Request an appToken from [http://app.bluecats.com](http://app.bluecats.com)
 
 
-####Step 5:  The XCode simulator does not support BLE without special dongles and special settings...   you must debug your app on an actual device with BLE support, targeting iOS 6.1 or iOS 7.0
+####Step 5:  The XCode simulator does not support BLE USB dongles...   you must debug your app on an actual device with BLE support, targeting iOS 7.0
