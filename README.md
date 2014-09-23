@@ -21,4 +21,4 @@ bluecats-litterbox-ios
 ####Step 3:  Get your appToken from [http://app.bluecats.com/apps](http://app.bluecats.com/apps)
 
 
-####Step 5:  The XCode simulator does not support BLE USB dongles...   you must debug your app on an actual device with BLE support, targeting iOS 7.0
+####Step 4:  The XCode simulator does not support BLE USB dongles...   you must debug your app on an actual device with BLE support, targeting iOS 7.0
