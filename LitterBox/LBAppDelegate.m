@@ -50,6 +50,11 @@
         [[BCMicroLocationManager sharedManager] startUpdatingMicroLocation];
     }];
     
+    //iOS 8.0 now requires apps to request permission to display local notifications
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+    }
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     LBNearbySitesViewController *sitesViewController = [[LBNearbySitesViewController alloc] init];

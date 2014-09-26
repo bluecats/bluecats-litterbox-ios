@@ -2,6 +2,8 @@ bluecats-litterbox-ios
 ======================
 ###Here's the basics:
 
+####BlueCats LitterBox has been updated to support iOS 8.0
+If you are updating your app to support iOS 8.0, follow our [iOS 8.0 Checklist](https://github.com/bluecats/bluecats-ios-sdk/wiki/iOS-8-Checklist)
 
 ####Step 1:  clone the repo into a directory of your choosing.
 
