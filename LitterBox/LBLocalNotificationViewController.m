@@ -264,11 +264,16 @@ static NSString * const kLBTextFieldCellIdentifier = @"TextFieldCell";
         cell.delegate = self;
         cell.selectionStyle = UITableViewCellEditingStyleNone;
         
+        cell.rightTextField.inputView = nil;
+        cell.rightTextField.inputAccessoryView = nil;
+        
         if (indexPath.row == 0) {
             cell.leftLabel.text = @"Body";
+            cell.rightTextField.text = self.alertBody;
         }
         else {
             cell.leftLabel.text = @"Action";
+            cell.rightTextField.text = self.alertAction;
         }
         return cell;
     }
@@ -379,7 +384,17 @@ static NSString * const kLBTextFieldCellIdentifier = @"TextFieldCell";
 
 #pragma mark - ELCTextFieldDelegate methods
 
-- (void)textFieldCell:(ELCTextFieldCell *)inCell updateTextLabelAtIndexPath:(NSIndexPath *)inIndexPath string:(NSString *)inValue
+- (BOOL)textFieldCell:(ELCTextFieldCell *)inCell shouldReturnForIndexPath:(NSIndexPath *)inIndexPath withValue:(NSString *)inValue
+{
+    if (inIndexPath.section == 1 && inIndexPath.row == 2) {
+        return NO;
+    }
+    else {
+        return YES;
+    }
+}
+
+- (void)textFieldCell:(ELCTextFieldCell *)cell updateTextLabelAtIndexPath:(NSIndexPath *)inIndexPath string:(NSString *)inValue
 {
     if (inIndexPath.section == 0) {
         

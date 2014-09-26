@@ -13,6 +13,7 @@
 #import "FXKeychain.h"
 #import "LBConstants.h"
 #import "NSString+LBAdditions.h"
+#import <CoreLocation/CoreLocation.h>
 
 @implementation LBAppDelegate
 
@@ -23,13 +24,31 @@
         application.applicationIconBadgeNumber = 0;
     }
     
-    [BlueCatsSDK startPurring];
-    
     NSString *appToken = [FXKeychain defaultKeychain][LBKeychainKeyAppToken];
-    if ([appToken isGuid]) {
-        [BlueCatsSDK setAppToken:appToken];
-        [[BCMicroLocationManager sharedManager] startUpdatingMicroLocation];
+    if (![appToken isGuid]) {
+        appToken = nil;
     }
+    
+    [BlueCatsSDK startPurringWithAppToken:appToken completion:^(BCStatus status) {
+        if (status == kBCStatusPurringWithErrors) {
+            BCAppTokenVerificationStatus appTokenVerificationStatus = [BlueCatsSDK appTokenVerificationStatus];
+            if (appTokenVerificationStatus == kBCAppTokenVerificationStatusNotProvided || appTokenVerificationStatus == kBCAppTokenVerificationStatusInvalid) {
+                //kBCAppTokenVerificationStatusNotProvided - Use setAppToken to set the app token.  Get an app token from app.bluecats.com
+                //kBCAppTokenVerificationStatusInvalid - App token invalid.
+            }
+            if (![BlueCatsSDK isLocationAuthorized]) {
+                [BlueCatsSDK requestAlwaysLocationAuthorization];
+                //[BlueCatsSDK requestWhenInUseLocationAuthorization]; "WhenInUse" only allows beacon ranging when the app is used.
+            }
+            if (![BlueCatsSDK isNetworkReachable]) {
+                //If this is the only error purring will be occur with network connectivity.
+            }
+            if (![BlueCatsSDK isBluetoothEnabled]) {
+                //Prompt user to enable bluetooth in setings.  If BLE is required for current funcitonality a modal is reccomended.
+            }
+        }
+        [[BCMicroLocationManager sharedManager] startUpdatingMicroLocation];
+    }];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     

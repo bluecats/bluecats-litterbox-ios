@@ -55,11 +55,11 @@ static NSString * const kLBSiteCellIdentifier = @"SiteCell";
         
         _sitesForSiteState = [[MutableOrderedDictionary alloc] init];
         [_sitesForSiteState setObject:[NSMutableArray array]
-                               forKey:[BCMicroLocationManager stringForSiteState:BCSiteStateInside]];
+                               forKey:[self stringForSiteState:BCSiteStateInside]];
         [_sitesForSiteState setObject:[NSMutableArray array]
-                               forKey:[BCMicroLocationManager stringForSiteState:BCSiteStateOutside]];
+                               forKey:[self stringForSiteState:BCSiteStateOutside]];
         [_sitesForSiteState setObject:[NSMutableArray array]
-                               forKey:[BCMicroLocationManager stringForSiteState:BCSiteStateUnknown]];
+                               forKey:[self stringForSiteState:BCSiteStateUnknown]];
     }
     return _sitesForSiteState;
 }
@@ -201,7 +201,7 @@ static NSString * const kLBSiteCellIdentifier = @"SiteCell";
 
 - (void)determinedState:(BCSiteState)state forSite:(BCSite *)site
 {
-    NSMutableArray *sites = [self.sitesForSiteState objectForKey:[BCMicroLocationManager stringForSiteState:state]];
+    NSMutableArray *sites = [self.sitesForSiteState objectForKey:[self stringForSiteState:state]];
     if (![sites containsObject:site]) {
         
         BOOL removed = NO;
@@ -227,12 +227,24 @@ static NSString * const kLBSiteCellIdentifier = @"SiteCell";
 
 - (BOOL)removeSite:(BCSite *)site fromArrayForSiteState:(BCSiteState)state
 {
-    NSMutableArray *sites = [self.sitesForSiteState objectForKey:[BCMicroLocationManager stringForSiteState:state]];
+    NSMutableArray *sites = [self.sitesForSiteState objectForKey:[self stringForSiteState:state]];
     if ([sites containsObject:site]) {
         [sites removeObject:site];
         return YES;
     }
     return NO;
+}
+
+- (NSString *)stringForSiteState:(BCSiteState)state
+{
+    switch (state) {
+        case BCSiteStateInside:
+            return @"Inside";
+        case BCSiteStateOutside:
+            return @"Outside";
+        default:
+            return @"Unknown";
+    }
 }
 
 #pragma mark - Table view data source

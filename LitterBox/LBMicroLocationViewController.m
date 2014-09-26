@@ -203,12 +203,17 @@
         else {
             NSArray *beacons = [microLocation beaconsForSite:self.site proximity:self.selectedProximity];
             
-            NSMutableArray *compositeKeys = [[NSMutableArray alloc] init];
+            //NOTE: In previous version of LitterBox beacon.compositeKey was displayed here.
+            //In later releases this property has been renamed to beacon.iBeaconKey
+            //The iBeaconKey property is only relevant when beacons are broadcasting in iBeaconMode
+            //so serial number which is a unique identifier for a beacon in all modes is now
+            //used instead
+            NSMutableArray *beaconSerialNumbers = [[NSMutableArray alloc] init];
             for (BCBeacon *beacon in beacons) {
-                [compositeKeys addObject:[beacon.compositeKey substringFromIndex:32]];
+                [beaconSerialNumbers addObject:beacon.serialNumber];
             }
             
-            attributedString = [self attributedStringForValues:compositeKeys];
+            attributedString = [self attributedStringForValues:beaconSerialNumbers];
         }
     }
     
@@ -262,7 +267,7 @@
         self.siteStateLabel.text = nil;
     }
     else {
-        self.siteStateLabel.text = [BCMicroLocationManager stringForSiteState:state].uppercaseString;
+        self.siteStateLabel.text = [self stringForSiteState:state].uppercaseString;
     }
 }
 
@@ -296,6 +301,18 @@
 - (void)keySegmentedControlChangedValue:(id)sender
 {
     [self setValuesForMicroLocation:self.microLocationManager.microLocation];
+}
+
+- (NSString *)stringForSiteState:(BCSiteState)state
+{
+    switch (state) {
+        case BCSiteStateInside:
+            return @"Inside";
+        case BCSiteStateOutside:
+            return @"Outside";
+        default:
+            return @"Unknown";
+    }
 }
 
 #pragma mark - BCMicroLocationManagerDelegate methods
