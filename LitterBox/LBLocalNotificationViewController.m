@@ -290,7 +290,7 @@ static NSString * const kLBTextFieldCellIdentifier = @"TextFieldCell";
             
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.selectionStyle = UITableViewCellSelectionStyleBlue;
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"%d", _indexPathsOfSelectedCategories.count];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", _indexPathsOfSelectedCategories.count];
         }
         else {
             cell.accessoryType = UITableViewCellAccessoryNone;
